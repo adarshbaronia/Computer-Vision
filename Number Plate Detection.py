@@ -1,3 +1,4 @@
+#CAR NUMBER PLATE DETECTION USING WEBCAM
 import cv2
 
 imgwidth=640
@@ -7,7 +8,7 @@ cap=cv2.VideoCapture(0)
 cap.set(3,imgwidth)
 cap.set(4,imgheight)
 cap.set(10,100)
-numberplatecascade = cv2.CascadeClassifier('/Users/dharmendraverma/Downloads/Python/New projects/Object Detection/haarcascade_russian_plate_number.xml')
+numberplatecascade = cv2.CascadeClassifier('haarcascade_russian_plate_number.xml')
 minarea=500    
 color = (255,0,255)    
 count=0
